@@ -1,17 +1,13 @@
 #include <QtGui/QApplication>
-#include <QWidget>
-//#include "mainwindow.h"
+#include "mainwindow.h"
 #include "employee.h"
-#include <QDebug>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //QWidget w;
+    MainWindow w;
 
-    //w.show();
-
-    qDebug() << Employee::getByID(4)->getEmailAddress();
+    w.show();
     
-    //return a.exec();
+    return a.exec();
 }

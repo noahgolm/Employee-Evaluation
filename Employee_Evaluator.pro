@@ -13,11 +13,13 @@ TEMPLATE = app
 SOURCES += main.cpp \
     entity.cpp \
     employee.cpp \
-    employer.cpp
+    employer.cpp \
+    mainwindow.cpp
 
 HEADERS  += \
     entity.h \
     employee.h \
-    employer.h
+    employer.h \
+    mainwindow.h
 
 FORMS    += mainwindow.ui
