@@ -14,12 +14,14 @@ SOURCES += main.cpp \
     entity.cpp \
     employee.cpp \
     employer.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    evaluation.cpp
 
 HEADERS  += \
     entity.h \
     employee.h \
     employer.h \
-    mainwindow.h
+    mainwindow.h \
+    evaluation.h
 
 FORMS    += mainwindow.ui
