@@ -28,7 +28,8 @@ Employee::~Employee()
 /* Static method to return an employee through an ID number */
 Employee* Employee::getByID(int id)
 {
-    foreach(Employee* emp, employees) // Iterate through all employees
+    // Iterate through the list of employees for a match
+    foreach(Employee* emp, employees)
     {
         if(emp->getID() == id) // Check if IDs match
             return emp;

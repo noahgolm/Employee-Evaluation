@@ -1,12 +1,13 @@
+/**
+  * @file Entity.h
+  * Base class for the employer and employee classes. This holds the common properties between the two.
+  */
+
 #ifndef ENTITY_H
 #define ENTITY_H
 
 #include <QString>
 
-/**
-  * @class Entity
-  * @abstract Base class for the employer and employee classes
-  */
 class Entity
 {
 public:
@@ -20,7 +21,7 @@ public:
     void setLocation(QString address, QString c, QString s, QString zip);
 
     // Getter methods for properties
-    int getID();
+    int     getID();
     QString getEmailAddress();
     QString getPhoneNumber();
     QString getStreetAddress();
@@ -29,7 +30,7 @@ public:
     QString getZipCode();
 
 private:
-    int uniqueID; // Unique entity identifier
+    int     uniqueID; // Unique entity identifier
     QString emailAddress; // Email address
     QString phoneNumber; // Phone number
     QString streetAddress, city, state, zipCode; // Address and location information
